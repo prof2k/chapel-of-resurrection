@@ -1,0 +1,182 @@
+ /* @keyframes pulse {
+    50% {
+        box-shadow: 0 0 0 0px rgba(47, 54, 64, 1),0 0 0 10px rgba(0, 210, 186, .2);
+    }
+
+    62.5% {
+        box-shadow: 0 0 0 7px rgba(47, 54, 64, 1),0 0 0 13px rgba(0, 210, 186, .2);
+    }
+
+    75% {
+        box-shadow: 0 0 0 12px rgba(47, 54, 64, 1), 0 0 0 17px rgba(0, 210, 186, .2);
+    }
+
+    100% {
+        box-shadow: 0 0 0 17px rgba(47, 54, 64, 1), 0 0 0 20px rgba(0, 210, 186, 0);
+    }
+}  */
+
+@keyframes pulse {
+    40% {
+        box-shadow: 0 0 0 0em rgba(47, 54, 64, 1),0 0 0 .71428em rgba(0, 210, 186, .2);
+    }
+
+    60% {
+        box-shadow: 0 0 0 .5em rgba(47, 54, 64, 1),0 0 0 .9286em rgba(0, 210, 186, .2);
+    }
+
+    80% {
+        box-shadow: 0 0 0 .8571em rgba(47, 54, 64, 1), 0 0 0 1.2143em rgba(0, 210, 186, .1);
+    }
+
+    100% {
+        box-shadow: 0 0 0 1.1429em rgba(47, 54, 64, 1), 0 0 0 1.4286em rgba(0, 210, 186, 0);
+    }
+}
+
+@keyframes top-fade-in {
+    0% {
+        transform: translateY(-1em);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-1em);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes left-fade-in {
+    0% {
+        transform: translateX(-2em);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(-2em);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes right-fade-in {
+    0% {
+        transform: translateX(2em);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(2em);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* slide show */
+@keyframes slide1 {
+    19% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slide2 {
+    39% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slide3 {
+    59% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slide4 {
+    79% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slide5 {
+    99% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
