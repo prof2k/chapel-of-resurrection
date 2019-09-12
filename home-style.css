@@ -1,6 +1,6 @@
-@import url("../styles/header-footer-style.css");
-@import url("../styles/universal-style.css");
-@import url("../styles/typography.css");
+@import url("./styles/header-footer-style.css");
+@import url("./styles/universal-style.css");
+@import url("./styles/typography.css");
 
 #intro-banner {
     padding: 0;
