@@ -102,7 +102,7 @@ header input#nav_activator {
     display: block;
     position: absolute;
     top: 47px;
-    right: 35px;
+    right: 20px;
     font-size: 11px;
     width: 3em;
     height: .3em;
@@ -361,12 +361,16 @@ footer #footer-message p{
 #copyright {
     margin-top: 30px;
     font-size: 90%;
+    padding-bottom: 10px;
 }
 
-#developer-contact {
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
+#copyright ul {
+    flex-direction: row-reverse;
+}
+
+#copyright ul li:not(#developer-contact) {
+    padding: 10px 5px;
+    flex-grow: 1;
 }
 
 /* media queries */
@@ -407,13 +411,13 @@ footer #footer-message p{
         position: fixed;
         top: 0; right: 0;
         margin-left: 0;
-        padding: 10px; 
+        padding: 0px; 
         width: 0;
         height: 100vh;
         background: rgba(0,0,0,.94);
         font-size: 1.1em;
         overflow-y: auto;
-        transition: all ease-in-out .15s;
+        transition: all ease-in-out .15s, padding ease-in-out 0s;
         text-align: center;
         z-index: 998;
         color: white;
@@ -452,6 +456,7 @@ footer #footer-message p{
         display: block;
         /* padding: 10vh 10vw; */
         width: 100vw;
+        /* padding: 10px; */
     }
 
     #main-nav ul {
@@ -483,6 +488,25 @@ footer #footer-message p{
     #main-nav li a {
         display: block;
     }
+
+    footer {
+        padding: 2px;
+    }
+
+    footer nav>ul>li:last-of-type>ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    footer nav>ul>li:last-of-type>ul>li {
+        margin: 0 10px;
+    }
+    
+    footer #social-contact-message>li {
+        flex-grow: 1;
+        margin: 3px;
+    }
     
 }
 
@@ -493,6 +517,22 @@ footer #footer-message p{
         margin-right: 0;
         margin-top: 0;
     }
+
+    #mission-banner {
+        width: unset;
+        padding: 2px;
+        padding-top: 30px;
+    }
+
+    footer #social-contact-message #social {
+        order: 3;
+
+    }
+
+    footer #social-contact-message #footer-message {
+        min-width: 200px;
+    }
+
 }
 
 

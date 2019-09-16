@@ -318,6 +318,10 @@ a:hover+img[alt="go down"] {
     .slide-item .intro-extra {
         max-width: unset;
     }    
+
+    #section-blocks .container {
+        align-items: stretch;
+    }
 }
 
 @media(max-width: 768px)  {
