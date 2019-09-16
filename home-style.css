@@ -5,24 +5,26 @@
 #intro-banner {
     padding: 0;
     color: white;
+    /* min-height: 73vh; */
     /* min-height: 73vh;
     max-height: 75vh; */
 }
 .slide-item {
     width: 100vw;
-    min-height: 73vh;
-    max-height: 75vh;
+    /* min-height: 73vh; */
+    /* max-height: 75vh; */
     height: 100%;
-    padding: 20px 0;
+    /* padding: 20px 0; */
+    padding: 0;
     background-blend-mode: saturation;
     background-size: cover;
     /* background-image: linear-gradient(45deg, cadetblue, teal); */
     background-color: rgba(0,0,0,.4);
     background-position: center;
     z-index: 2;
-    /* position: absolute;
+    position: absolute;
     top: 0;bottom: 0;
-    right: 0; left: 0; */
+    right: 0; left: 0;
 }
 
 .slide-item h2 {
@@ -31,30 +33,30 @@
 
 .slide-item p {
     font-family: quicksand;
-    font-size: 26px;
+    font-size: 1.58em;
     max-width: 800px;
 }
 
 .slide-item#intro-welcome {
-    background-image: url("../imgs/sunday-service.JPG");
+    background-image: url("./imgs/sunday-service.JPG");
 }
 
 .slide-item#intro-faith {
-    background-image: url("../imgs/bible-study-session.JPG");
+    background-image: url("./imgs/bible-study-session.JPG");
 }
 
 .slide-item#intro-services {
-    background-image: url("../imgs/choir-practice-session.JPG");
+    background-image: url("./imgs/choir-practice-session.JPG");
 }
 
-.slide-item:nth-of-type(1) .container {
+/* .slide-item:nth-of-type(1) .container {
     padding-right: 50px;
-}
+} */
 
 .slide-item:nth-of-type(1) h2{
     max-width: 700px;
     padding-bottom: 15px;
-    font-size: 4em;
+    font-size: 3.4em;
 }
 
 .slide-item:not(#intro-welcome) .message {
@@ -79,6 +81,7 @@
 .slide-item .intro-extra {
     background: rgba(0, 0, 0, .45);
     border-radius: 10px;
+    max-width: 610px;
 }
 
 .slide-item table {
@@ -127,6 +130,7 @@ img[alt="go down"] {
     padding-left: 10px;
     display: inline-block !important;
     width: auto !important;
+    height: .8em;
     position: absolute;
     margin-top: 7px;
 }
@@ -166,6 +170,11 @@ a:hover+img[alt="go down"] {
 
 /* Owl carousel plugin Modification */
 
+.owl-carousel .owl-item {
+    min-height: 79vh !important;
+    width: 100vw !important;
+}
+
 .owl-nav {
     position: absolute;
     top: 49%;
@@ -178,6 +187,7 @@ a:hover+img[alt="go down"] {
     padding: 0 10px;
     box-sizing: border-box;
     height: 0;
+    opacity: .7;
 }
 
 .owl-nav button:hover span {
@@ -188,7 +198,6 @@ a:hover+img[alt="go down"] {
 .owl-nav button:focus {
     outline: none;
 }
-
 
 /* section blocks */
 #section-blocks .container h3{
@@ -202,9 +211,17 @@ a:hover+img[alt="go down"] {
     flex-basis: 23%;
     color: white;
     background: var(--sec-clr);
-    margin-right: 20px;
+    margin: 0 7px;
+    margin-bottom: 10px;
     transition: all ease-in-out 250ms;
     border-radius: 3px;
+    flex-shrink: 2;
+    min-width: 240px;
+}
+
+#section-blocks .container>*:nth-child(3) {
+    flex-shrink: 4;
+    min-width: 300px;
 }
 
 #section-blocks .container a {
@@ -246,249 +263,85 @@ a:hover+img[alt="go down"] {
     background: var(--pri-clr);
 }
 
-@import url("./styles/universal-style.css");
-@import url("./styles/header-footer-style.css");
-@import url("./styles/typography.css");
-
-#intro-banner {
-    padding: 0;
-    color: white;
-    /* min-height: 73vh;
-    max-height: 75vh; */
-}
-.slide-item {
-    width: 100vw;
-    min-height: 73vh;
-    max-height: 75vh;
-    height: 100%;
-    padding: 20px 0;
-    background-blend-mode: saturation;
-    background-size: cover;
-    /* background-image: linear-gradient(45deg, cadetblue, teal); */
-    background-color: rgba(0,0,0,.4);
-    background-position: center;
-    z-index: 2;
-    /* position: absolute;
-    top: 0;bottom: 0;
-    right: 0; left: 0; */
-}
-
-.slide-item h2 {
-    font-size: 3em;
-}
-
-.slide-item p {
-    font-family: quicksand;
-    font-size: 26px;
-    max-width: 800px;
-}
-
-.slide-item#intro-welcome {
-    background-image: url("./imgs/sunday-service.JPG");
-}
-
-.slide-item#intro-faith {
-    background-image: url("./imgs/bible-study-session.JPG");
-}
-
-.slide-item#intro-services {
-    background-image: url("./imgs/choir-practice-session.JPG");
-}
-
-.slide-item:nth-of-type(1) .container {
-    padding-right: 50px;
-}
-
-.slide-item:nth-of-type(1) h2{
-    max-width: 700px;
-    padding-bottom: 15px;
-    font-size: 4em;
-}
-
-.slide-item:not(#intro-welcome) .message {
-    max-width: 43%;
-    /* height: 100%; */
-}
-
-.slide-item:not(#intro-welcome) h2 {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    letter-spacing: 1px;
-}
-
-.slide-item:not(#intro-welcome) h3 {
-    display: inline-block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    /* box-shadow: 0 7px 0 white; */
-}
-
-.slide-item .intro-extra {
-    background: rgba(0, 0, 0, .45);
-    border-radius: 10px;
-}
-
-.slide-item table {
-    line-height: 30px;
-}
-
-.slide-item table td {
-    padding: 5px;
-}
-
-.slide-item .intro-extra {
-    font-size: 110%;
-    
-}
-
-.slide-item table thead th {
-    font-weight: 50;
-    padding-bottom: 20px;
-}
-
-.slide-item table tbody tr:nth-child(odd) {
-    background: rgba(888,888,888,.1);
-}
-
-.slide-item #groups-list a {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 5px;
-    border: 2px solid white;
-    border-radius: 15px;
-}
-
-.slide-item #groups-list a:hover {
-    color: var(--pri-clr);
-    background: white;
-}
-
-.slide-item .intro-extra#groups-list,
-.slide-item#intro-faith .intro-extra {
-    flex-basis: 47%;
-}
-
-img[alt="go down"] {
-    /* animation: point-down 1s ease-in-out infinite; */
-    transition: all ease-in-out 250ms;
-    padding-left: 10px;
-    display: inline-block !important;
-    width: auto !important;
-    position: absolute;
-    margin-top: 7px;
-}
-
-a:hover+img[alt="go down"] {
-    animation: point-down 1s ease-in-out infinite;
-}
-
-.image-info {
-    position: absolute;
-    bottom: 0; left: 5px;
-    font-family: sans-serif;
-}
-
-.image-info p {
-    font-size: 11px;
-    /* letter-spacing: 1px; */
-    font-weight: lighter;
-    font-family: sans-serif;
-    text-orientation: italic;
-    color: #ddd;
-}
-
-@keyframes point-down {
-    0% {
-        margin-top: 10px;
+@media(max-width: 1200px) {
+    body {
+        font-size: 14px;
     }
 
-    50% {
-        margin-top: -2px;
+    header .container.bigger {
+        width: 95%;
     }
 
-    100% {
-        margin-top: 10px;
+    header nav li a {
+        padding: 16px;
+    }
+
+    #intro-banner .container.bigger {
+        width: 93%;
+    }
+    .slide-item .intro-extra {
+        padding: 10px;
+    }
+
+    .slide-item #groups-list a {
+        padding: 10px 15px;
+    }
+
+    .slide-item:nth-of-type(1) h2 {
+        font-size: 3em;
+    }
+
+    .slide-item table {
+        line-height: 25px;
     }
 }
 
-/* Owl carousel plugin Modification */
+@media(max-width: 1000px) {
+    #intro-banner .container {
+        flex-direction: column;
+        justify-content: center;
+    }
 
-.owl-nav {
-    top: 49%;
-    color: var(--pri-clr);
-    font-size: 100px;
-    line-height: 20px;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 0 10px;
-    box-sizing: border-box;
-    height: 0;
+    #intro-banner .container>* {
+        flex-grow: unset;
+    }
+
+    .slide-item:not(#intro-welcome) .message {
+        max-width: 90%;
+    }
+
+    .slide-item .message {
+        text-align: center;
+        font-size: .7em;
+    }
+
+    .slide-item .intro-extra {
+        max-width: unset;
+    }    
 }
 
-.owl-nav button:hover span {
-    color: #ff9800;
-    transition: color ease-in-out 250ms;
+@media(max-width: 768px)  {
+    .container {
+        width: 93%;
+    }
 }
 
-.owl-nav button:focus {
-    outline: none;
-}
+@media(max-width: 650px) {
+    .slide-item .intro-extra {
+        display: none;
+    }
 
-/* section blocks */
-#section-blocks .container h3{
-    font-size: 1.3em;
-    margin-top: 0;
-    padding: 30px;
-    padding-bottom: 0px;
-}
+    .slide-item .message {
+        text-align: center;
+        font-size: unset;
+    }
 
-#section-blocks .container>* {
-    flex-basis: 23%;
-    color: white;
-    background: var(--sec-clr);
-    margin-right: 20px;
-    transition: all ease-in-out 250ms;
-    border-radius: 3px;
-}
+    .owl-carousel .owl-item {
+        min-height: 55vh !important;
+    }
 
-t#section-blocks .container a {
-    display: inline-block;
-    padding: 12px 30px;
-    padding-right: 30px;
-    border-radius: 0px 10000px 10000px 0;
-    margin-bottom: 2px;
-    max-width: 80%;
+    .owl-nav {
+        padding: 0 2px;
+        /* font-size: 16px; */
+    }
 }
-
-#section-blocks .container nav {
-    padding-bottom: 20px;
-}
-
-#section-blocks .container nav li a {
-    color: white;
-    background: var(--pri-clr);
-    position: relative;
-}
-
-#section-blocks .container nav li a:hover {
-    background: unset;
-}
-
-#section-blocks .container a::before {
-    content: "";
-    position: absolute;
-    top: 45%; left: 5px;
-    top: calc(50% - 5px);
-    width: 10px;
-    height: 10px;
-    background: var(--sec-clr);
-    border-radius: 100%;
-    transition: inherit;
-}
-
-#section-blocks .container nav li a:hover::before {
-    background: var(--pri-clr);
-}
-
