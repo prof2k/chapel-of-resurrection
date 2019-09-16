@@ -1,3 +1,35 @@
-body {
-    display: none;
+@import url("https://prof2k.github.io/chapel-of-resurrection/styles/header-footer-style.css");
+@import url("https://prof2k.github.io/chapel-of-resurrection/styles/universal-style.css");
+@import url("https://prof2k.github.io/chapel-of-resurrection/styles/typography.css");
+
+/*under construction*/
+
+section#under-construction {
+    min-height: 50vh;
+    color: #333;
+    /* display: flex; */
+}
+
+#under-construction>.container {
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+}
+
+#under-construction h2 {
+    text-transform: capitalize;
+    font-size: 2em;
+    display: block;
+    font-size: 2.7em;
+    font-weight: bold;
+    background-image: repeating-linear-gradient(-45deg,#d0a7ac, #d0a7ac 20px, crimson 0, crimson 40px);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+#under-construction p {
+    font-family: quicksand;
+    /* font-weight: 700; */
+    font-size: 1.5em;
 }
