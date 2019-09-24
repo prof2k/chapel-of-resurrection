@@ -1,9 +1,16 @@
+/*Author: Kolawole Elijah
+//Copyright 2019 Kolawole Elijah
+//This work is covered by copyright and should not without permission of the author.
+//To contact the author -- elijahkolawole1@gmail.com
+*/ 
+ 
+
 /*--> universal */
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Arial, Verdana, sans-serif;
+    font-family: 'Segoe UI', 'Lato', Tahoma, Arial, Verdana, sans-serif;
     font-size: 15px;
 }
 
