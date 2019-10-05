@@ -9,12 +9,14 @@
 
 .article {
     font-size: 20px;
+    font-family: Lato;
     font-family: var(--article-font);
     letter-spacing: 1px;
     line-height: 1.5em;
 }
 
 .article a {
+    color: #ba6c2b;
     color: var(--pri-clr);
 }
 
@@ -23,10 +25,12 @@ p.article {
 }
 
 p.article a {
+    color: #ba6c2b;
     color: var(--pri-clr);
 }
 
 p.article a:hover {
+    color: #3c3e3e;
     color: var(--sec-clr);
 }
 

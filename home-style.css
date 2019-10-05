@@ -2,19 +2,25 @@
 @import url("https://prof2k.github.io/chapel-of-resurrection/styles/universal-style.css");
 @import url("https://prof2k.github.io/chapel-of-resurrection/styles/typography.css");
 
+:root {
+    --pri-clr: #ba6c2b;
+    --sec-clr: #3c3e3e;
+    --pri-hover-clr: #cf7830;
+    --sec-clr-light: #5fffeb;
+    --sec-clr-lighter: #e5fffc;
+    --useful-color: #2f3f54;
+    scroll-behavior: smooth;
+    --webkit-scroll-behavior: smooth;
+}
+
 #intro-banner {
     padding: 0;
     color: white;
-    /* min-height: 73vh; */
-    /* min-height: 73vh;
-    max-height: 75vh; */
 }
 .slide-item {
     width: 100vw;
-    /* min-height: 73vh; */
-    /* max-height: 75vh; */
     height: 100%;
-    /* padding: 20px 0; */
+    padding: 20px 0;
     padding: 0;
     background-blend-mode: saturation;
     background-size: cover;
@@ -28,7 +34,7 @@
 }
 
 .slide-item#intro-welcome h2 {
-    font-size: 5em;
+    font-size: 3.5em;
 }
 
 .slide-item h2 {
@@ -120,6 +126,7 @@
 }
 
 .slide-item #groups-list a:hover {
+    color: #ba6c2b;
     color: var(--pri-clr);
     background: white;
 }
@@ -183,6 +190,7 @@ a:hover+img[alt="go down"] {
 .owl-nav {
     position: absolute;
     top: 49%;
+    color: #ba6c2b;
     color: var(--pri-clr);
     font-size: 100px;
     line-height: 20px;
@@ -215,6 +223,7 @@ a:hover+img[alt="go down"] {
 #section-blocks .container>* {
     flex-basis: 23%;
     color: white;
+    background: #3c3e3e;
     background: var(--sec-clr);
     margin: 0 7px;
     margin-bottom: 10px;
@@ -234,8 +243,9 @@ a:hover+img[alt="go down"] {
     padding: 12px 30px;
     padding-right: 30px;
     border-radius: 0px 10000px 10000px 0;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     max-width: 80%;
+    box-shadow: 3px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 #section-blocks .container nav {
@@ -244,6 +254,7 @@ a:hover+img[alt="go down"] {
 
 #section-blocks .container nav li a {
     color: white;
+    background: #ba6c2b;
     background: var(--pri-clr);
     position: relative;
 }
@@ -259,12 +270,14 @@ a:hover+img[alt="go down"] {
     top: calc(50% - 5px);
     width: 10px;
     height: 10px;
+    background: #3c3e3e;
     background: var(--sec-clr);
     border-radius: 100%;
     transition: inherit;
 }
 
 #section-blocks .container nav li a:hover::before {
+    background: #ba6c2b;
     background: var(--pri-clr);
 }
 
@@ -333,6 +346,10 @@ a:hover+img[alt="go down"] {
     .container {
         width: 93%;
     }
+
+    .slide-item#intro-welcome {
+        font-size: 10px;
+    }
 }
 
 @media(max-width: 650px) {
@@ -346,7 +363,7 @@ a:hover+img[alt="go down"] {
     }
 
     .owl-carousel .owl-item {
-        min-height: 55vh !important;
+        min-height: 69vh !important;
     }
 
     .owl-nav {
@@ -354,3 +371,5 @@ a:hover+img[alt="go down"] {
         /* font-size: 16px; */
     }
 }
+
+
